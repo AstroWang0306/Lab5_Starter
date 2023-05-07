@@ -17,16 +17,16 @@ function init() {
   function updateHorn() {
     const selectedHorn = hornSelect.value;
     
-    if (selectedHorn == air-horn) {
+    if (selectedHorn == "air-horn") {
       image.src = 'assets/images/air-horn.svg';
-    } else if (selectedHorn == car-horn) {
+    } else if (selectedHorn == "car-horn") {
       image.src = 'assets/images/car-horn.svg';
     } else {
       image.src = 'assets/images/party-horn.svg
     }
     
-    image.src = `assets/images/${selectedHorn}.svg`;
-    audio.src = `assets/audio/${selectedHorn}.mp3`;
+    //image.src = `assets/images/${selectedHorn}.svg`;
+    //audio.src = `assets/audio/${selectedHorn}.mp3`;
   }
 }
  

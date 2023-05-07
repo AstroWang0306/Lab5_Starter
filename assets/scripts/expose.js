@@ -25,7 +25,8 @@ function init() {
 
     // Update the sound file based on the selected horn
     audioElement.src = 'assets/audio/' + hornSelection + '.mp3';
-}
+  }
+
 
 function updateVolume() {
     var volumeLevel = Number(volumeSlider.value);
@@ -47,4 +48,12 @@ function updateVolume() {
       volumeIcon.src = 'assets/icons/volume-level-3.svg';
       volumeIcon.alt = 'Volume Level 3';
     }
-  }
+ }
+  
+ function playSound(event) {
+   event.preventDefault();
+   audioElement.play();
+ }
+}
+  
+  

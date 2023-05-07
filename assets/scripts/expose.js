@@ -2,7 +2,9 @@
 
 window.addEventListener('DOMContentLoaded', init);
 
-
+function init() {
+  //todo
+}
  
 
 

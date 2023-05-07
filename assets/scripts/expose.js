@@ -14,10 +14,10 @@ function init() {
   volume.addEventListener('input', updateVolume);
   playButton.addEventListener('click', playSound);
   
-  function updateHorn() {
-    const selectedHorn = hornSelect.value;
+  function updateHorn(image) {
+    //const selectedHorn = hornSelect.value;
     
-    if (selectedHorn == "air-horn") {
+    if (hornSelect.value == "air-horn") {
       image.src = 'assets/images/air-horn.svg';
     } else if (selectedHorn == "car-horn") {
       image.src = 'assets/images/car-horn.svg';

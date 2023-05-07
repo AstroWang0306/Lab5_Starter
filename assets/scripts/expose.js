@@ -47,7 +47,7 @@ function updateHorn() {
 // Update the volume
 function updateVolume() {
   const volume = volumeSlider.value;
-  audioElement.volume = volume / 100;
+  audioElement.volume = volume;
 
   // Update volume icon based on volume level
   if (volume >= 67) {

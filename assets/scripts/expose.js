@@ -10,18 +10,21 @@ function init() {
   const playButton = document.querySelector('#expose button');
   const audio = document.querySelector('.hidden');
   
-  hornSelect.addEventListener('change', updateHorn);
-  volume.addEventListener('input', updateVolume);
-  playButton.addEventListener('click', playSound);
+  hornSelect.addEventListener("change", updateHorn);
+  // volume.addEventListener('input', updateVolume);
+  // playButton.addEventListener('click', playSound);
+  
+
   
   function updateHorn(image) {
-    //const selectedHorn = hornSelect.value;
+    const selectedHorn = hornSelect.value;
+    image.src = "assets/images/${selectedHorn}.svg"
     
-    if (hornSelect.value == "air-horn") {
-      image.src = 'assets/images/air-horn.svg';
+    if (selectedHorn.value == "air-horn") {
+      image.src = "assets/images/air-horn.svg";
     } else if (selectedHorn == "car-horn") {
-      image.src = 'assets/images/car-horn.svg';
-    } else {
+      image.src = "assets/images/car-horn.svg";
+    } else if( {
       image.src = 'assets/images/party-horn.svg
     }
     

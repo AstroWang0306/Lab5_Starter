@@ -3,29 +3,40 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
-  const image = document.querySelector("#explore img");
-  const textToSpeak = document.getElementById("text-to-speak");
-  const voiceSelect = document.getElementById("voice-select");
-  const audio = document.querySelector("#explore button");
- 
-  const synth = window.speechSynthesis;
+  const voiceSelect = document.getElementById('voice-select');
+  const speakButton = document.getElementById('speak-button');
+  const textInput = document.getElementById('text-input');
+  const face = document.getElementById('face');
   
-  let voices = [];
-  function populateVoiceList() {
-    voices = synth.getVoices();
-console.log("123");
-    for (let i = 0; i < voices.length; i++) {
-      const option = document.createElement("option");
-      option.textContent = "${voices[i].name} (${voices[i].lang})";
-
-      if (voices[i].default) {
-        option.textContent += " — DEFAULT";
-      }
-console.log(voices[i].lang);
-      option.setAttribute("data-lang", voices[i].lang);
-      option.setAttribute("data-name", voices[i].name);
+  // Function to populate the "Select Voice" dropdown with available voices
+  function populateVoices() {
+    const voices = speechSynthesis.getVoices();
+    voices.forEach((voice) => {
+      const option = document.createElement('option');
+      option.textContent = `${voice.name} (${voice.lang})`;
+      option.value = voice.name;
       voiceSelect.appendChild(option);
+    });
+  }
+  
+  populateVoices();
+  
+  speechSynthesis.addEventListener('voiceschanged', populateVoices);
+  
+  function speakText() {
+    const selectedVoice = voiceSelect.value;
+    const utterance = new SpeechSynthesisUtterance(textInput.value);
+    const voices = speechSynthesis.getVoices();
+    const voice = voices.find((v) => v.name === selectedVoice);
+    if (voice) {
+      utterance.voice = voice;
+      utterance.onstart = () => {
+        toggleFace(true);
+      };
+      utterance.onend = () => {
+        toggleFace(false);
+      };
+      speechSynthesis.speak(utterance);
     }
   }
-  populateVoiceList();
 }

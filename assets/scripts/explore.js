@@ -7,7 +7,7 @@ function init() {
   const speakButton = document.getElementById('speak-button');
   const textInput = document.getElementById('text-to-speak');
   const face = document.getElementById('face');
-  const speakButton = document.querySelector("#expose button");
+  const playButton = document.querySelector("#expose button");
   
   // Function to populate the "Select Voice" dropdown with available voices
   function populateVoices() {
@@ -41,5 +41,5 @@ function init() {
     }
   }
   
-  speakButton.addEventListener('click', speakText);
+  playButton.addEventListener('click', speakText);
 }

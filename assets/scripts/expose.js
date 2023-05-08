@@ -3,12 +3,12 @@
 window.addEventListener("DOMContentLoaded", init);
 
 function init() {
-  var hornSelect = document.getElementById("horn-select");
-  var image = document.querySelector("#expose img");
-  var volume = document.getElementById("volume");
-  var volumeIcon = document.querySelector("#volume-controls img");
-  var playButton = document.querySelector("#expose button");
-  var audio = document.querySelector(".hidden");
+  const hornSelect = document.getElementById("horn-select");
+  const image = document.querySelector("#expose img");
+  const volume = document.getElementById("volume");
+  const volumeIcon = document.querySelector("#volume-controls img");
+  const playButton = document.querySelector("#expose button");
+  const audio = document.querySelector(".hidden");
   
   hornSelect.addEventListener("change", updateHorn);
   volume.addEventListener("input", updateVolume);
@@ -31,6 +31,9 @@ function init() {
   
   function updateVolume() {
   
+  }
+  
+  function playSound() {
   }
 }
  

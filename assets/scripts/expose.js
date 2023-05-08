@@ -17,9 +17,9 @@ function init() {
 
   
   function updateHorn() {
-    const selectedHorn = hornSelect.value;
-    image.src = "assets/images/${selectedHorn}.svg";
-    /*
+    //const selectedHorn = hornSelect.value;
+    //image.src = "assets/images/${selectedHorn}.svg";
+    
     if (hornSelect.value = "air-horn") {
       image.src = "assets/images/air-horn.svg";
     } else if (hornSelect.value = "car-horn") {
@@ -29,7 +29,7 @@ function init() {
     } else {
       image.src = "assets/images/no-image.png";
     }
-    */
+    
     //document.querySelector("#expose img").src = "assets/images/${selectedHorn}.svg";
     
   }

@@ -27,4 +27,5 @@ function init() {
       voiceSelect.appendChild(option);
     }
   }
+  populateVoiceList();
 }

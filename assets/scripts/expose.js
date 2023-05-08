@@ -16,7 +16,7 @@ function init() {
   
 
   
-  function updateHorn(image) {
+  function updateHorn() {
     const selectedHorn = hornSelect.value;
     image.src = "assets/images/${selectedHorn}.svg"
     

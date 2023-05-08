@@ -17,9 +17,9 @@ function init() {
 
   
   function updateHorn() {
-    const selectedHorn = hornSelect.value;
+    //const selectedHorn = hornSelect.value;
     
-    if (selectedHorn = "air-horn") {
+    if (hornSelect.value = air-horn) {
       image.src = "/assets/images/air-horn.svg";
     }
     

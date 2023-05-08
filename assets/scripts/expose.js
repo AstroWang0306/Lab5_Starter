@@ -17,17 +17,17 @@ function init() {
 
   
   function updateHorn() {
-    //const selectedHorn = hornSelect.value;
+    const selectedHorn = hornSelect.value;
     //image.src = "assets/images/${selectedHorn}.svg";
     
-    if (hornSelect.value = "air-horn") {
+    if (hornSelect.value == "air-horn") {
       document.querySelector("#expose img").src = "assets/images/air-horn.svg";;
-    } else if (hornSelect.value = "car-horn") {
+    } else if (hornSelect.value == "car-horn") {
       document.querySelector("#expose img").src = "assets/images/car-horn.svg";
-    } else if (hornSelect.value = "party-horn") {
-      image.src = "assets/images/party-horn.svg";
+    } else if (hornSelect.value == "party-horn") {
+      image.src == "assets/images/party-horn.svg";
     } else {
-      image.src = "assets/images/no-image.png";
+      image.src == "assets/images/no-image.png";
     }
     
     //document.querySelector("#expose img").src = "assets/images/${selectedHorn}.svg";

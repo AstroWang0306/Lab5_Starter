@@ -21,9 +21,9 @@ function init() {
     //image.src = "assets/images/${selectedHorn}.svg";
     
     if (hornSelect.value = "air-horn") {
-      image.src = "assets/images/air-horn.svg";
+      document.querySelector("#expose img").src = "assets/images/air-horn.svg";;
     } else if (hornSelect.value = "car-horn") {
-      image.src = "assets/images/car-horn.svg";
+      document.querySelector("#expose img").src = "assets/images/car-horn.svg";
     } else if (hornSelect.value = "party-horn") {
       image.src = "assets/images/party-horn.svg";
     } else {

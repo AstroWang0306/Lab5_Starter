@@ -22,8 +22,7 @@ function init() {
       image.src = "assets/images/car-horn.svg";
       audio.src = "assets/audio/car-horn.mp3";
     } else if (hornSelect.value == "party-horn") {
-      console log("123");
-      image.src == "assets/images/party-horn.svg";
+      image.src = "assets/images/party-horn.svg";
       audio.src = "assets/audio/party-horn.mp3";
     } else {
       image.src == "assets/images/no-image.png";

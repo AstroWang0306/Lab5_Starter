@@ -20,7 +20,7 @@ function init() {
     const selectedHorn = hornSelect.value;
     
     if (selectedHorn = "air-horn") {
-      image.src = "assets/images/air-horn.svg";
+      image.src = "/assets/images/air-horn.svg";
     }
     
     //document.querySelector("#expose img").src = "assets/images/${selectedHorn}.svg";

@@ -18,7 +18,12 @@ function init() {
   
   function updateHorn() {
     const selectedHorn = hornSelect.value;
-    document.querySelector("#expose img").src = "assets/images/${selectedHorn}.svg";
+    
+    if (selectedHorn = "air-horn") {
+      image.src = "assets/images/air-horn.svg";
+    }
+    
+    //document.querySelector("#expose img").src = "assets/images/${selectedHorn}.svg";
     
   }
 }

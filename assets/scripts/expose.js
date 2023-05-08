@@ -20,13 +20,13 @@ function init() {
     const selectedHorn = hornSelect.value;
     image.src = "assets/images/${selectedHorn}.svg"
     
-    if (selectedHorn.value == "air-horn") {
-      image.src = "assets/images/air-horn.svg";
-    } else if (selectedHorn == "car-horn") {
-      image.src = "assets/images/car-horn.svg";
-    } else if( {
-      image.src = 'assets/images/party-horn.svg
-    }
+    //if (selectedHorn.value == "air-horn") {
+    //  image.src = "assets/images/air-horn.svg";
+    //} else if (selectedHorn == "car-horn") {
+    //  image.src = "assets/images/car-horn.svg";
+    //} else if( {
+    //  image.src = 'assets/images/party-horn.svg
+    //}
     
     //image.src = `assets/images/${selectedHorn}.svg`;
     //audio.src = `assets/audio/${selectedHorn}.mp3`;

@@ -13,7 +13,7 @@ function init() {
   let voices = [];
   function populateVoiceList() {
     voices = synth.getVoices();
-
+console.log("123");
     for (let i = 0; i < voices.length; i++) {
       const option = document.createElement("option");
       option.textContent = "${voices[i].name} (${voices[i].lang})";

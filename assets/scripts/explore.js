@@ -39,4 +39,6 @@ function init() {
       speechSynthesis.speak(utterance);
     }
   }
+  
+  speakButton.addEventListener('click', speakText);
 }
